@@ -2,10 +2,8 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 
 plugins {
-	//kotlin("jvm") version "2.3.0"
+	kotlin("jvm") version "2.3.0"
 }
-
-if (project.parent == null) plugins.getPlugin("org.jetbrains.kotlin.jvm").apply(project)
 
 group = "io.github.epicvon2468.gdx_helpers"
 version = "1.0.0"
