@@ -22,5 +22,8 @@ val gdxVersion = "1.14.0"
 
 dependencies {
 	api("io.github.libktx:ktx-actors:$ktxVersion")
+	api("io.github.libktx:ktx-scene2d:$ktxVersion")
+	api("io.github.libktx:ktx-assets:$ktxVersion")
 	api("com.badlogicgames.gdx:gdx:$gdxVersion")
+	compileOnly("org.jetbrains:annotations:26.0.2-1")
 }
