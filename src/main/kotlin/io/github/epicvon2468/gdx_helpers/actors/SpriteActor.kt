@@ -27,6 +27,8 @@ open class SpriteActor(
 
 	constructor(texture: Texture) : this(Sprite(texture))
 
+	open fun copy(): SpriteActor = SpriteActor(Sprite(this.sprite))
+
 	override fun debug(): SpriteActor {
 		super.debug()
 		return this
@@ -52,7 +54,6 @@ open class SpriteActor(
 		val colour = this.colour
 		if (this.sprite.colour != colour) this.sprite.colour = colour
 	}
-
 	override fun positionChanged() {
 		val x: Float = this.x
 		val y: Float = this.y
